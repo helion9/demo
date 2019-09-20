@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <script>
+      function r(x,y,z){
+        return function(a,b,c){
+          document.getElementById('div1').innerHTML='x='+(x+=a)+'; y='+(y+=b)+'; z='+(z+=c);
+        };
+      }
+      x=r(1,1,1);
+      x(2,-1,1);
+    </script>
+  </body>
+</html>
