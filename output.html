@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <script>
+      function p(){
+        var a1=arguments[0];
+        var a2=arguments[1];
+        var s=document.getElementById('div1');
+        if(a2){
+          s.innerHTML+=a1;
+        }else{
+          s.innerHTML=a1;
+        }
+      }
+      p('Hello ',1);
+      p('World!',1);
+    </script>
+  </body>
+</html>
